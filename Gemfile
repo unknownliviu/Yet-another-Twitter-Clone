@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem "haml"
 gem 'bootstrap-sass', '2.1'
+gem 'childprocess', '0.3.6'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
