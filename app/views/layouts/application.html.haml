@@ -9,6 +9,7 @@
 
   %body
     =render 'layouts/header'
-  .container
-    = yield
-    =render 'layouts/footer'
+    .container
+      = yield
+      =render 'layouts/footer'
+      = debug(params) if Rails.env.development?
