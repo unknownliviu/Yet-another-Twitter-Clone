@@ -50,12 +50,6 @@ class UsersController < ApplicationController
 
 
 private
-  def signed_in_user
-    unless signed_in?
-      store_location
-      redirect_to signin_url, notice: "Yeah... can't go there unless you sign in." 
-    end
-  end
 
   def no_create_after
     if signed_in?
