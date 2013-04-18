@@ -44,7 +44,7 @@ class UsersController < ApplicationController
     user = User.find(params[:id])
     user.destroy unless current_user?(user)
     flash[:success] = "User killed!"
-    redirect_to users_url
+    redirect_to users_url(page: params[:page])
   end
 
 
