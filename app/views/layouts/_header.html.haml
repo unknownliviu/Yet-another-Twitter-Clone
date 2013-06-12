@@ -1,8 +1,12 @@
 %header.navbar.navbar-fixed-top.navbar-inverse
   .navbar-inner
     .container
-      = link_to "Awesome app", root_path, id: "logo"
-      %nav
+      %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.brand{:href => root_path } Socialiser
+      .nav-collapse
         %ul.nav.pull-right
           %li= link_to "Home", root_path
           %li= link_to "Help", help_path
@@ -19,4 +23,4 @@
                 %li
                   = link_to "Sign out", signout_path, method: "delete"
           - else
-            %li= link_to "Sign in", signin_path
+            %li= link_to "Sign in", signin_path            
