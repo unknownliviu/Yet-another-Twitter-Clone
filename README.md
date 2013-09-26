@@ -1,6 +1,4 @@
 # Ruby on Rails Tutorial: sample application
 
-This is the sample application for
-[*Ruby on Rails Tutorial: Learn Rails by Example*](http://railstutorial.org/)
-by [Michael Hartl](http://michaelhartl.com/).
- suuuper
+This is a Ruby on Rails application based on Michael Hartl's online guide.
+
